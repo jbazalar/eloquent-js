@@ -1,0 +1,24 @@
+<!doctype html>
+<script src="code/ancestry.js"></script>
+<script src="code/chapter/05_higher_order.js"></script>
+<script src="code/intro.js"></script>
+
+<body><script>
+function average(array) {
+  function plus(a, b) { return a + b; }
+  return array.reduce(plus) / array.length;
+}
+/*
+var byName = {};
+ancestry.forEach(function(person) {
+  byName[person.name] = person;
+});*/
+
+// Your code here.
+
+// → 31.2
+
+var ancestry = JSON.parse(ANCESTRY_FILE);
+console.log(ancestry.length);
+// → 39
+</script></body>
